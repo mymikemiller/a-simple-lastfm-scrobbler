@@ -1,0 +1,29 @@
+#summary How other applications can scrobble music through A Simple Last.fm Scrobbler
+#labels Phase-Implementation
+
+= Introduction =
+
+Any application can easily scrobble their music through A Simple Last.fm Scrobbler. It is just to send certain broadcasts with the appropriate track information, and aslfms will do the rest.
+
+*Currently it is not possible for more than one application to scrobble music through aslfms at the same. Such behavior would probably result in none of the tracks being scrobbled.*
+
+= Details =
+
+The broadcast actions are:
+
+|| PLAYSTATECHANGED || "com.adam.aslfms.notify.playstatechanged" || When a track starts playing ||
+|| PLAYBACKCOMPLETE || "com.adam.aslfms.notify.playbackcomplete" || When a track has finished playing ||
+
+It is not necessary to broadcast PLAYBACKCOMPLETE for a track to scrobble, if a new track starts playing and PLAYSTATECHANGED is broadcast.
+
+= Examples = 
+This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks.
+
+{{{
+Intent bcast = new Intent(PLAYSTATECHANGED);
+bcast.putExtra("artist", "Chris Cornell");
+bcast.putExtra("album", "Casino Royale");
+bcast.putExtra("track", "You Know My Name");
+bcast.putExtra("duration", 244);
+sendBroadcast(bcast);
+}}}
