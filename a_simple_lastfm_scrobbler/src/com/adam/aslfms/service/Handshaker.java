@@ -58,6 +58,10 @@ public class Handshaker {
 
 		Log.d(TAG, "pwdMd5: " + pwdMd5);
 
+		// for debug
+		//String clientid = "tst";
+		//String clientver = "1.0";
+		// for apps with real client-id and client-ver
 		String clientid = mCtx.getString(R.string.client_id);
 		String clientver = mCtx.getString(R.string.client_ver);
 
