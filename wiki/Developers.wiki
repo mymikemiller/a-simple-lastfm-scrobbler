@@ -17,10 +17,21 @@ The broadcast actions are:
 It is not necessary to broadcast PLAYBACKCOMPLETE for a track to scrobble, if a new track starts playing and PLAYSTATECHANGED is broadcast.
 
 = Examples = 
-This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks.
+This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks:
 
 {{{
 Intent bcast = new Intent(PLAYSTATECHANGED);
+bcast.putExtra("artist", "Chris Cornell");
+bcast.putExtra("album", "Casino Royale");
+bcast.putExtra("track", "You Know My Name");
+bcast.putExtra("duration", 244);
+sendBroadcast(bcast);
+}}}
+
+And this says that James Marster's song "Looking At You" has finished playing and should be scrobbled: 
+
+{{{
+Intent bcast = new Intent(PLAYBACKCOMPLETE);
 bcast.putExtra("artist", "Chris Cornell");
 bcast.putExtra("album", "Casino Royale");
 bcast.putExtra("track", "You Know My Name");
