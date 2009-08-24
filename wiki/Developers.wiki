@@ -32,9 +32,9 @@ And this says that James Marster's song "Looking At You" has finished playing an
 
 {{{
 Intent bcast = new Intent(PLAYBACKCOMPLETE);
-bcast.putExtra("artist", "Chris Cornell");
-bcast.putExtra("album", "Casino Royale");
-bcast.putExtra("track", "You Know My Name");
+bcast.putExtra("artist", "James Marster");
+bcast.putExtra("album", "Like A Waterfall");
+bcast.putExtra("track", "Looking At You");
 bcast.putExtra("duration", 244);
 sendBroadcast(bcast);
 }}}
