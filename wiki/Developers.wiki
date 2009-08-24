@@ -5,7 +5,7 @@
 
 Any application can easily scrobble their music through A Simple Last.fm Scrobbler. It is just to send certain broadcasts with the appropriate track information, and aslfms will do the rest.
 
-You just have to implement the behavior below, and then send a mail to simple.lfm.scrobbler@gmail.com and tell me about it.
+You just have to implement the behavior below, and then send a mail to <a href="mailto:simple.lfm.scrobbler@gmail.com">simple.lfm.scrobbler@gmail.com</a> and tell me about it.
 
 *Currently it is not possible for more than one application to scrobble music through aslfms at the same. Such behavior would probably result in none of the tracks being scrobbled.*
 
