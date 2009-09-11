@@ -16,7 +16,7 @@ The broadcast actions are:
 || PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || When a track starts playing ||
 || PLAYBACKCOMPLETE || "com.example.musicapp.notify.playbackcomplete" || When a track has finished playing ||
 
-Replace "com.example.musicapp" with your apps package.
+Replace "com.example.musicapp" with your app's package.
 
 It is not necessary to broadcast PLAYBACKCOMPLETE for a track to scrobble, if a new track starts playing and PLAYSTATECHANGED is broadcast.
 
