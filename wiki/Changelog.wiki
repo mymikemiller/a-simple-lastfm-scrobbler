@@ -1,7 +1,5 @@
 #summary The changes made in each release
 
-= Changelog =
-
 === 1.0.2 ===
 
   * Fixed a bug where SLS would crash if you unmounted/remounted the sd-card.
