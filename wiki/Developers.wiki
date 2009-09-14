@@ -47,4 +47,4 @@ sendBroadcast(bcast);
 
 *Currently it is not possible for more than one application to scrobble music through aslfms at the same time. Such behavior would probably result in none of the tracks being scrobbled.*
 
-But this happens only if you play music in more than one app simultaneously, and the typical user probably won't do that
+But this happens only if you play music in more than one app simultaneously, and the typical user probably won't do that.
