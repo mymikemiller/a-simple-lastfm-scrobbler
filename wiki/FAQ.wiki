@@ -9,7 +9,7 @@ To ask a question, email [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrob
 
 === 1: What is Last.fm? ===
 
-See [http://www.last.fm/help/faq Last.fm FAQ]
+See [http://www.last.fm/help/faq the Last.fm FAQ].
 
 === 2: Is this a music player? ===
 
@@ -21,7 +21,7 @@ See this for a list of changes.
 
 === 4: Please support app YY ===
 
-I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be sure though, the list of supported apps will grow. (If you are a developer, see this).
+I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be sure though, the list of supported apps will grow. (If you are a developer, see [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_scrobbler/assets/changelog.txt this]).
 
 === 5: Why don't you add support for TuneWiki? ===
 
