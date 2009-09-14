@@ -7,8 +7,6 @@ Any application can easily scrobble their music through A Simple Last.fm Scrobbl
 
 You just have to implement the behavior below, and then send a mail to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about it.
 
-*Currently it is not possible for more than one application to scrobble music through aslfms at the same time. Such behavior would probably result in none of the tracks being scrobbled.*
-
 = Details =
 
 The broadcast actions are:
@@ -44,3 +42,9 @@ bcast.putExtra("track", "Looking At You");
 bcast.putExtra("duration", 244);
 sendBroadcast(bcast);
 }}}
+
+= Important =
+
+*Currently it is not possible for more than one application to scrobble music through aslfms at the same time. Such behavior would probably result in none of the tracks being scrobbled.*
+
+But this happens only if you play music in more than one app simultaneously, and the typical user probably won't do that
