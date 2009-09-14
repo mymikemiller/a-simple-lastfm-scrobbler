@@ -39,7 +39,7 @@ Intent bcast = new Intent(PLAYBACKCOMPLETE);
 bcast.putExtra("artist", "James Marster");
 bcast.putExtra("album", "Like A Waterfall");
 bcast.putExtra("track", "Looking At You");
-bcast.putExtra("duration", 244);
+bcast.putExtra("duration", 175);
 sendBroadcast(bcast);
 }}}
 
