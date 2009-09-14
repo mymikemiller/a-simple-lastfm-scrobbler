@@ -9,7 +9,7 @@ To ask a question, email [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrob
 
 === 1: What is Last.fm? ===
 
-Visit [http://www.last.fm Last.fm], or see their[http://www.last.fm/help/faq FAQ].
+Visit [http://www.last.fm Last.fm], or see their [http://www.last.fm/help/faq FAQ].
 
 === 2: Is this a music player? ===
 
