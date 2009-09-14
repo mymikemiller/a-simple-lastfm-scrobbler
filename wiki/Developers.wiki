@@ -11,20 +11,18 @@ You just have to implement the behavior below, and then send a mail to [mailto:s
 
 The broadcast actions are:
 
-|| PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || When a track starts playing ||
+|| PLAYBACKSTARTED || "com.example.musicapp.notify.playbackstarted" || When a track starts playing ||
 || PLAYBACKCOMPLETE || "com.example.musicapp.notify.playbackcomplete" || When a track has finished playing ||
 
 Replace "com.example.musicapp" with your app's package name.
 
 It is not necessary to broadcast PLAYBACKCOMPLETE for a track to scrobble, if a new track starts playing and PLAYSTATECHANGED is broadcast.
 
-A PLAYSTATECHANGED intent can be broadcast for the same track several times, and it'll still be scrobbled only once. Thus you can broadcast on pausing, resuming, skipping etc. (This is what HTC Hero and the default android app does).
-
 = Examples = 
 This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks:
 
 {{{
-Intent bcast = new Intent(PLAYSTATECHANGED);
+Intent bcast = new Intent(PLAYBACKSTARTED);
 bcast.putExtra("artist", "Chris Cornell");
 bcast.putExtra("album", "Casino Royale");
 bcast.putExtra("track", "You Know My Name");
@@ -42,9 +40,3 @@ bcast.putExtra("track", "Looking At You");
 bcast.putExtra("duration", 175);
 sendBroadcast(bcast);
 }}}
-
-= Important =
-
-*Currently it is not possible for more than one application to scrobble music through aslfms at the same time. Such behavior would probably result in none of the tracks being scrobbled.*
-
-But this happens only if you play music in more than one app simultaneously, and the typical user probably won't do that.
