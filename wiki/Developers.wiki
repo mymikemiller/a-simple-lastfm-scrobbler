@@ -1,4 +1,4 @@
-#summary How other applications can scrobble music through A Simple Last.fm Scrobbler
+#summary How other applications can scrobble music through Simple Last.fm Scrobbler
 #labels Phase-Implementation
 
 = Introduction =
