@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Any application can easily scrobble their music through A Simple Last.fm Scrobbler. It is just to send certain broadcasts with the appropriate track information, and aslfms will do the rest.
+Any application can easily scrobble their music through A Simple Last.fm Scrobbler. It is just to send certain broadcasts with the appropriate track information, and SLS will do the rest.
 
 You just have to implement the behavior below, and then send a mail to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about it.
 
@@ -22,21 +22,25 @@ It is not necessary to broadcast PLAYBACKCOMPLETE for a track to scrobble, if a 
 This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks:
 
 {{{
-Intent bcast = new Intent(PLAYBACKSTARTED);
-bcast.putExtra("artist", "Chris Cornell");
-bcast.putExtra("album", "Casino Royale");
-bcast.putExtra("track", "You Know My Name");
-bcast.putExtra("duration", 244);
-sendBroadcast(bcast);
+Intent bCast = new Intent(PLAYBACKSTARTED);
+bCast.putExtra("artist", "Chris Cornell");
+bCast.putExtra("album", "Casino Royale");
+bCast.putExtra("track", "You Know My Name");
+bCast.putExtra("duration", 244);
+sendBroadcast(bCast);
 }}}
 
 And this says that James Marster's song "Looking At You" has finished playing and should be scrobbled: 
 
 {{{
-Intent bcast = new Intent(PLAYBACKCOMPLETE);
-bcast.putExtra("artist", "James Marster");
-bcast.putExtra("album", "Like A Waterfall");
-bcast.putExtra("track", "Looking At You");
-bcast.putExtra("duration", 175);
-sendBroadcast(bcast);
+Intent bCast = new Intent(PLAYBACKCOMPLETE);
+bCast.putExtra("artist", "James Marster");
+bCast.putExtra("album", "Like A Waterfall");
+bCast.putExtra("track", "Looking At You");
+bCast.putExtra("duration", 175);
+sendBroadcast(bCast);
 }}}
+
+= Custom Broadcasts =
+
+If you already broadcast your own intents, tell me about them and I'll see if I can work them into SLS. 
