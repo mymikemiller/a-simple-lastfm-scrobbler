@@ -1,0 +1,16 @@
+#summary Frequently Asked Questions
+
+== Introduction ==
+
+To ask a question, email 
+
+
+== Questions ==
+
+=== 1: What is Last.fm? ===
+
+See [http://www.last.fm/help/faq Last.fm FAQ]
+
+=== 2: Is this a music player? ==
+
+No, this is a scrobbler, which means that it submits information to Last.fm on what music you listen to. Then you can view your listening history and other statistics (plus much, much more) on your Last.fm profile page
