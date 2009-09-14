@@ -1,4 +1,4 @@
-#summary Frequently Asked Questions
+#summary Frequently Asked Questions / What I assume you want to know
 
 == Introduction ==
 
