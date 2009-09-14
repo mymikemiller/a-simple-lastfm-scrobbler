@@ -17,11 +17,11 @@ No, this is a scrobbler, which means that it submits information to Last.fm on w
 
 === 3: What's new in version XX? ===
 
-See this for a list of changes.
+See [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_scrobbler/assets/changelog.txt this] for a list of changes.
 
 === 4: Please support app YY ===
 
-I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be sure though, the list of supported apps will grow. (If you are a developer, see [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_scrobbler/assets/changelog.txt this]).
+I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be sure though, the list of supported apps will grow. (If you are a developer, see [http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/Developers this]).
 
 === 5: Why don't you add support for TuneWiki? ===
 
