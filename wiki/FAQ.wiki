@@ -2,7 +2,7 @@
 
 == Introduction ==
 
-To ask a question, email 
+To ask a question, email [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com]
 
 
 == Questions ==
@@ -11,6 +11,18 @@ To ask a question, email
 
 See [http://www.last.fm/help/faq Last.fm FAQ]
 
-=== 2: Is this a music player? ==
+=== 2: Is this a music player? ===
 
-No, this is a scrobbler, which means that it submits information to Last.fm on what music you listen to. Then you can view your listening history and other statistics (plus much, much more) on your Last.fm profile page
+No, this is a scrobbler, which means that it submits information to Last.fm on what music you listen to. Then you can view your listening history and other statistics (plus much, much more) on your Last.fm profile page.
+
+=== 3: What's new in version XX? ===
+
+See this for a list of changes.
+
+=== 4: Please support app YY ===
+
+I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be sure though, the list of supported apps will grow. (If you are a developer, see this).
+
+=== 5: Why don't you add support for TuneWiki? ===
+
+TuneWiki already has built in support for scrobbling. In TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
