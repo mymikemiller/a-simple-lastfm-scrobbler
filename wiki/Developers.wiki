@@ -11,16 +11,16 @@ You just have to implement the behavior below, then send a mail to [mailto:simpl
 
 *Notice: I've recently changed the API, and I apologize for any inconvenience this may have caused.*
 
-The broadcast actions are:
+The broadcast action is:
 
 || PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || Intent for SLS to listen for ||
 
-Which must contain one of these states:
+which must contain one of these states:
 
 || START || 0 || A track has started playing ||
 || RESUME || 1 || Playback has been paused for a/the track ||
 || PAUSE || 2 || Playback has been resumed for a/the track ||
-|| COMPLETE || 3 || A/the track has finished playing ||
+|| COMPLETE || 3 || A/The track has finished playing ||
 
 Replace "com.example.musicapp" with your app's package name.
 
@@ -39,11 +39,11 @@ This sends a broadcast that Chris Cornell's song "You Know My Name" has started 
 
 {{{
 Intent bCast = new Intent(PLAYSTATECHANGED);
+bCast.putExtra("state", START);
 bCast.putExtra("artist", "Chris Cornell");
 bCast.putExtra("album", "Casino Royale");
 bCast.putExtra("track", "You Know My Name");
 bCast.putExtra("duration", 244);
-bCast.putExtra("state", START);
 sendBroadcast(bCast);
 }}}
 
@@ -51,11 +51,11 @@ And this says that James Marster's song "Looking At You" has finished playing an
 
 {{{
 Intent bCast = new Intent(PLAYSTATE);
+bCast.putExtra("state", COMPLETE);
 bCast.putExtra("artist", "James Marster");
 bCast.putExtra("album", "Like A Waterfall");
 bCast.putExtra("track", "Looking At You");
 bCast.putExtra("duration", 175);
-bCast.putExtra("state", COMPLETE);
 sendBroadcast(bCast);
 }}}
 
