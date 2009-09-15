@@ -3,41 +3,59 @@
 
 = Introduction =
 
-Any application can easily scrobble their music through A Simple Last.fm Scrobbler. It is just to send certain broadcasts with the appropriate track information, and SLS will do the rest.
+Any application can easily scrobble their music through Simple Last.fm Scrobbler. It is just to send certain broadcasts with the appropriate track information, and SLS will do the rest.
 
 You just have to implement the behavior below, and then send a mail to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about it.
 
 = Details =
 
+*Notice: I've recently changed the API, and I apologize for any inconvenience this may have caused.*
+
 The broadcast actions are:
 
-|| PLAYBACKSTARTED || "com.example.musicapp.notify.playbackstarted" || When a track starts playing ||
-|| PLAYBACKCOMPLETE || "com.example.musicapp.notify.playbackcomplete" || When a track has finished playing ||
+|| PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || When a track starts playing / is resumed / paused / complete ||
+
+Which must contain one of these states:
+
+|| START || 0 ||
+|| RESUME || 1 ||
+|| PAUSE || 2 ||
+|| COMPLETE || 3 ||
 
 Replace "com.example.musicapp" with your app's package name.
 
-It is not necessary to broadcast PLAYBACKCOMPLETE for a track to scrobble, if a new track starts playing and PLAYSTATECHANGED is broadcast.
+It is not necessary to broadcast with state set to COMPLETE for a track to scrobble; if a new track starts playing and START is broadcast, previously broadcasted tracks will scrobble automatically.
 
-= Examples = 
+If you loop the same track, you have to send a COMPLETE for proper scrobbling.
+
+RESUME/PAUSE can be ignored and the scrobbling will still work (but with minor flaws, such as a track might get scrobbled, even though it has been played for less then 30s, or less than half it's duration).
+
+The fields for the broadcast intent are (artist, album, track, duration, state), and they are all mandatory.
+
+
+= Examples =
+
 This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks:
 
 {{{
-Intent bCast = new Intent(PLAYBACKSTARTED);
+Intent bCast = new Intent(PLAYSTATECHANGED);
 bCast.putExtra("artist", "Chris Cornell");
 bCast.putExtra("album", "Casino Royale");
 bCast.putExtra("track", "You Know My Name");
 bCast.putExtra("duration", 244);
+bCast.putExtra("state", START);
 sendBroadcast(bCast);
 }}}
 
 And this says that James Marster's song "Looking At You" has finished playing and should be scrobbled: 
 
 {{{
-Intent bCast = new Intent(PLAYBACKCOMPLETE);
+Intent bCast = new Intent(PLAYSTATE);
 bCast.putExtra("artist", "James Marster");
 bCast.putExtra("album", "Like A Waterfall");
 bCast.putExtra("track", "Looking At You");
 bCast.putExtra("duration", 175);
+bCast.putExtra("state", STOP);
 sendBroadcast(bCast);
 }}}
 
