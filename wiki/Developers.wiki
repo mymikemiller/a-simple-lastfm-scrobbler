@@ -3,7 +3,7 @@
 
 = Introduction =
 
-Any application can easily scrobble their music through Simple Last.fm Scrobbler. It is just to send certain broadcasts with the appropriate track information, and SLS will do the rest.
+Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the rest.
 
 You just have to implement the behavior below, and then send a mail to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about it.
 
