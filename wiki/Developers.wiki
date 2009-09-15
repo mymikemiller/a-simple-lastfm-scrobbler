@@ -13,7 +13,7 @@ You just have to implement the behavior below, and then send a mail to [mailto:s
 
 The broadcast actions are:
 
-|| PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || When a track starts playing / is resumed / paused / complete ||
+|| PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || Intent for SLS to listen for ||
 
 Which must contain one of these states:
 
