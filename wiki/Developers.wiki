@@ -17,10 +17,10 @@ The broadcast actions are:
 
 Which must contain one of these states:
 
-|| START || 0 ||
-|| RESUME || 1 ||
-|| PAUSE || 2 ||
-|| COMPLETE || 3 ||
+|| START || 0 || A track has started playing ||
+|| RESUME || 1 || Playback has been paused for a/the track ||
+|| PAUSE || 2 || Playback has been resumed for a/the track ||
+|| COMPLETE || 3 || A/the track has finished playing ||
 
 Replace "com.example.musicapp" with your app's package name.
 
