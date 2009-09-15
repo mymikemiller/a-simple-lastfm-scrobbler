@@ -55,7 +55,7 @@ bCast.putExtra("artist", "James Marster");
 bCast.putExtra("album", "Like A Waterfall");
 bCast.putExtra("track", "Looking At You");
 bCast.putExtra("duration", 175);
-bCast.putExtra("state", STOP);
+bCast.putExtra("state", COMPLETE);
 sendBroadcast(bCast);
 }}}
 
