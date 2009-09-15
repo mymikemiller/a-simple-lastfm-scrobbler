@@ -26,3 +26,11 @@ I'm always looking for new apps to support, but almost always it requires some w
 === 5: Why don't you add support for Tune-Wiki? ===
 
 Tune-Wiki already has built in support for scrobbling. In Tune-Wiki, go to Menu -> Settings -> Last.fm Account Settings.
+
+=== 6: Why won't my track scrobble if put on repeat? (Android Music/HTC Hero) ===
+
+This is an unfortunate bug/reality. As Android Music and HTC Hero currently work, if you put a single track on repeat, it won't scrobble as many times as is correct. This is because AM / HTCH doesn't submit enough information to external apps.
+
+If you have more than one track in your repeated playlist, scrobbling will be fine.
+
+As soon as I find a way to fix this, I will.
