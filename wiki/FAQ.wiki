@@ -23,7 +23,7 @@ See [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_s
 
 I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be assured though, the list of supported apps will grow. (If you are a developer, see [http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/Developers this]).
 
-=== 5: Why don't you add support for TuneWiki? ===
+=== 5: Why don't you add support for Tune-Wiki? ===
 
 Tune-Wiki already has built in support for scrobbling. In Tune-Wiki, go to Menu -> Settings -> Last.fm Account Settings.
 
