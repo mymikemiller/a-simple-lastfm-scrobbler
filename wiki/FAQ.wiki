@@ -4,10 +4,14 @@
 
 To ask a question, email [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com]
 
+<wiki:toc max_depth="3" />
+
 
 == Questions ==
 
 === 1: What is Last.fm? ===
+
+A site for music discovery, exploration, socialization, etc. And you can listen to music too!
 
 Visit [http://www.last.fm Last.fm], or see their [http://www.last.fm/help/faq FAQ].
 
@@ -34,3 +38,9 @@ This is an unfortunate bug/reality. As Android Music and HTC Hero currently work
 If you have more than one track in your repeated playlist, scrobbling will be fine.
 
 As soon as I find a way to fix this, I will.
+
+=== 7: What is Libre.fm? ===
+
+A newly released site, similar in ambition as Last.fm.
+
+Visit [http://libre.fm Libre.fm].
