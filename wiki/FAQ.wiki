@@ -41,6 +41,6 @@ As soon as I find a way to fix this, I will.
 
 === 7: What is Libre.fm? ===
 
-A newly released site, similar in ambition as Last.fm.
+A new website, similar in ambition to Last.fm.
 
 Visit [http://libre.fm Libre.fm].
