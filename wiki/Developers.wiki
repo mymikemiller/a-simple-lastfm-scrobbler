@@ -48,6 +48,8 @@ Table of source values:
 || "E" || Personalised recommendation except Last.fm (e.g. Pandora, Launchcast). ||
 || "U" || Source unknown. ||
 
+These values are taken from the Last.fm [http://www.last.fm/api/submissions#3.2 Submissions Protocol Specifiaction, section 3.2].
+
 = When to send =
 
 You should broadcast an intent with the information above whenever the user starts playing a new track, resumes a paused track or pauses or stops a already playing track. Sending intents at other times (such as when the user is seeking within a track) is unnecessary, but does no harm.
