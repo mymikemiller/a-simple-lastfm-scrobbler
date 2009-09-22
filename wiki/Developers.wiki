@@ -38,7 +38,7 @@ The possible fields for the broadcast intent (to be put in it's extras bundle) a
 || *track* || String || Yes || The track name ||
 || *duration* || int || Yes || The duration of the track (in seconds) ||
 || tracknumber || int || No || Track number on album ||
-|| mbid || String || No || A TrackID from [http://musicbrainz.org/doc/TrackID MusicBrainz] ||
+|| mbid || String || No || A TrackID from MusicBrainz [http://www.google.com Google home page] ||
 || source || String || No || How the user listens to the music - see table below. Default is "P". ||
 
 Table of source values:
@@ -101,4 +101,4 @@ If you already broadcast your own intents, tell me about them and I'll see if I 
 
 = Thanks =
 
-Thanks to jjc1138 of ScrobbleDroid, his/her documentation is superb.
+A tip of the hat to jjc1138 of ScrobbleDroid, his/her documentation is superb.
