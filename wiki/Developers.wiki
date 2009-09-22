@@ -3,13 +3,14 @@
 
 = Introduction =
 
-Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the rest.
+Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the all the account management, network requests and error-handling etc.
 
-You just have to implement the behavior below, then send a mail to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about it. I'll then quickly implement a new listener in SLS, which is done in less than a day.
+You just have to implement the behavior below, then send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about it. I'll then quickly implement a new listener in SLS, which is done in less than a day.
+
+If you have any questions about this API, or suggestions on how to improve it, please email me.
 
 = Details =
 
-*Notice: I've recently changed the API, and I apologize for any inconvenience this may have caused.*
 
 The broadcast action is:
 
@@ -17,6 +18,7 @@ The broadcast action is:
 
 which must contain one of these states:
 
+|| State || Integer value || What it means ||
 || START || 0 || A track has started playing ||
 || RESUME || 1 || Playback has been paused for a/the track ||
 || PAUSE || 2 || Playback has been resumed for a/the track ||
@@ -28,10 +30,24 @@ It is not necessary to broadcast with state set to COMPLETE for a track to scrob
 
 If you loop the same track, you have to send a COMPLETE for proper scrobbling.
 
-RESUME/PAUSE can be ignored and the scrobbling will still work (but with minor flaws, such as a track might get scrobbled, even though it has been played for less then 30s, or less than half it's duration).
+The possible fields for the broadcast intent (to be put in it's extras bundle) are:
 
-The fields for the broadcast intent are (artist, album, track, duration, state), and they are all mandatory.
+|| Name || Type || Required || Content ||
+|| state || int || Yes || One of the states above ||
+|| artist || String || Yes || The artist name || 
+|| album || String || Yes || The album name ||
+|| track || String || Yes || The track name ||
+|| duration || int || Yes || The duration of the track (in seconds) ||
+|| tracknumber || int || No || Track number on album ||
+|| mb-trackid || String || No || A [http://musicbrainz.org/doc/TrackID TrackID from MusicBrainz] ||
+|| source || String || No || How the user listens to the music - see table below. Default is "P". ||
 
+Table of source values
+|| Value || How the track was chosen ||
+|| "P" || Chosen by the user (the most common value, unless you have a reason for choosing otherwise, use this).  ||
+|| "R" || Non-personalised broadcast (e.g. Shoutcast, BBC Radio 1). ||
+|| "E" || Personalised recommendation except Last.fm (e.g. Pandora, Launchcast). ||
+|| "U" || Source unknown. ||
 
 = Examples =
 
