@@ -52,7 +52,7 @@ You should broadcast an intent with the information above whenever the user star
 
 It is not necessary to broadcast with state set to COMPLETE for a track to scrobble^1^; if a new track starts playing and START is broadcast, previously broadcasted tracks will scrobble automatically.
 
-^1^If you loop the same track, you have to send a COMPLETE for proper scrobbling.
+^1^If you play the same track again directly after it has finished playing (e.g. looping a playlist with one track), you have to send a COMPLETE for proper scrobbling.
 
 = Examples =
 
