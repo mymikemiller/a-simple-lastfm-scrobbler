@@ -38,7 +38,7 @@ The possible fields for the broadcast intent (to be put in it's extras bundle) a
 || *track* || String || Yes || The track name ||
 || *duration* || int || Yes || The duration of the track (in seconds) ||
 || tracknumber || int || No || Track number on album ||
-|| mbid || String || No || A TrackID from MusicBrainz [http://www.google.com Google home page] ||
+|| mbid || String || No || A Track-ID from [http://musicbrainz.org/doc/TrackID MusicBrainz] ||
 || source || String || No || How the user listens to the music - see table below. Default is "P". ||
 
 Table of source values:
@@ -71,7 +71,7 @@ And this says that James Marster's song "Looking At You" has finished playing an
 {{{
 Intent bCast = new Intent("com.example.musicapp.notify.playstatechanged");
 bCast.putExtra("state", COMPLETE);
-bCast.putExtra("artist", "James Marster");
+bCast.putExtra("artist", "James Marsters");
 bCast.putExtra("album", "Like A Waterfall");
 bCast.putExtra("track", "Looking At You");
 bCast.putExtra("duration", 175);
@@ -101,4 +101,4 @@ If you already broadcast your own intents, tell me about them and I'll see if I 
 
 = Thanks =
 
-A tip of the hat to jjc1138 of ScrobbleDroid, his/her documentation is superb.
+A tip of the hat to jjc1138 of Scrobble Droid, his/her documentation is superb.
