@@ -1,6 +1,8 @@
 #summary How other applications can scrobble music through Simple Last.fm Scrobbler
 #labels Phase-Implementation
 
+<wiki:toc max_depth="3" />
+
 = Introduction =
 
 Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the all the account management, network requests and error-handling etc.
