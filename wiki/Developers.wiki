@@ -98,3 +98,7 @@ sendBroadcast(bCast);
 = Custom Broadcasts =
 
 If you already broadcast your own intents, tell me about them and I'll see if I can work them into SLS. 
+
+= Thanks =
+
+Thanks to jjc1138 of ScrobbleDroid, his/her documentation is superb.
