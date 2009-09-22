@@ -11,7 +11,6 @@ If you have any questions about this API, or suggestions on how to improve it, p
 
 = Details =
 
-
 The broadcast action is:
 
 || PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || Intent for SLS to listen for ||
@@ -24,7 +23,7 @@ which must contain one of these states:
 || PAUSE || 2 || Playback has been resumed for a/the track ||
 || COMPLETE || 3 || A/The track has finished playing ||
 
-Replace "com.example.musicapp" with your app's package name.
+*Replace "com.example.musicapp" with your app's package name.*
 
 It is not necessary to broadcast with state set to COMPLETE for a track to scrobble; if a new track starts playing and START is broadcast, previously broadcasted tracks will scrobble automatically.
 
@@ -39,7 +38,7 @@ The possible fields for the broadcast intent (to be put in it's extras bundle) a
 || *track* || String || Yes || The track name ||
 || *duration* || int || Yes || The duration of the track (in seconds) ||
 || tracknumber || int || No || Track number on album ||
-|| mb-trackid || String || No || A TrackID from [http://musicbrainz.org/doc/TrackID MusicBrainz] ||
+|| mbid || String || No || A TrackID from [http://musicbrainz.org/doc/TrackID MusicBrainz] ||
 || source || String || No || How the user listens to the music - see table below. Default is "P". ||
 
 Table of source values:
@@ -49,12 +48,16 @@ Table of source values:
 || "E" || Personalised recommendation except Last.fm (e.g. Pandora, Launchcast). ||
 || "U" || Source unknown. ||
 
+= When to send =
+
+You should broadcast an intent with the information above whenever the user starts playing a new track, resumes a paused track or pauses or stops a already playing track. Sending intents at other times (such as when the user is seeking within a track) is unnecessary, but does no harm.
+
 = Examples =
 
 This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks:
 
 {{{
-Intent bCast = new Intent(PLAYSTATECHANGED);
+Intent bCast = new Intent("com.example.musicapp.notify.playstatechanged");
 bCast.putExtra("state", START);
 bCast.putExtra("artist", "Chris Cornell");
 bCast.putExtra("album", "Casino Royale");
@@ -66,7 +69,7 @@ sendBroadcast(bCast);
 And this says that James Marster's song "Looking At You" has finished playing and should be scrobbled: 
 
 {{{
-Intent bCast = new Intent(PLAYSTATE);
+Intent bCast = new Intent("com.example.musicapp.notify.playstatechanged");
 bCast.putExtra("state", COMPLETE);
 bCast.putExtra("artist", "James Marster");
 bCast.putExtra("album", "Like A Waterfall");
@@ -74,6 +77,23 @@ bCast.putExtra("track", "Looking At You");
 bCast.putExtra("duration", 175);
 sendBroadcast(bCast);
 }}}
+
+This might be if you have a radio app, which just started playing a new track:
+
+{{{
+Intent bCast = new Intent("com.example.musicapp.notify.playstatechanged");
+bCast.putExtra("state", START);
+bCast.putExtra("artist", "Yohanna");
+bCast.putExtra("album", "Eurovision Song Contest: Moscow 2009 (disc 2)");
+bCast.putExtra("track", "Is It True? (Iceland)");
+bCast.putExtra("duration", 181);
+bCast.putExtra("tracknumber", 3);
+bCast.putExtra("mbid", "ceb9d062-145c-4831-839b-3be53e9d5549");
+bCast.putExtra("source", "R");
+sendBroadcast(bCast);
+}}}
+
+*Remember to replace "com.example.musicapp" with your app's package name.*
 
 = Custom Broadcasts =
 
