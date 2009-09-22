@@ -42,7 +42,7 @@ The possible fields for the broadcast intent (to be put in it's extras bundle) a
 || mb-trackid || String || No || A [http://musicbrainz.org/doc/TrackID TrackID from MusicBrainz] ||
 || source || String || No || How the user listens to the music - see table below. Default is "P". ||
 
-Table of source values
+Table of source values:
 || Value || How the track was chosen ||
 || "P" || Chosen by the user (the most common value, unless you have a reason for choosing otherwise, use this).  ||
 || "R" || Non-personalised broadcast (e.g. Shoutcast, BBC Radio 1). ||
