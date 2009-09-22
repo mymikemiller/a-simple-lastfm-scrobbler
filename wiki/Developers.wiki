@@ -34,14 +34,14 @@ If you loop the same track, you have to send a COMPLETE for proper scrobbling.
 The possible fields for the broadcast intent (to be put in it's extras bundle) are:
 
 || Name || Type || Required || Content ||
-|| *state* || int || Yes || One of the states above ||
-|| *artist* || String || Yes || The artist name || 
-|| *album* || String || Yes || The album name ||
-|| *track* || String || Yes || The track name ||
-|| *duration* || int || Yes || The duration of the track (in seconds) ||
+|| *state* || *int* || *Yes* || *One of the states above* ||
+|| *artist* || *String* || *Yes* || *The artist name* || 
+|| *album* || *String* || *Yes* || *The album name* ||
+|| *track* || *String* || *Yes* || *The track name* ||
+|| *duration* || *int* || *Yes* || *The duration of the track (in seconds)* ||
 || tracknumber || int || No || Track number on album ||
 || mbid || String || No || A Track-ID from [http://musicbrainz.org/doc/TrackID MusicBrainz] ||
-|| source || String || No || How the user listens to the music - see table below. Default is "P". ||
+|| source || String || No || How the user listens to the music - see table below. Default is "P" ||
 
 Table of source values:
 || Value || How the track was chosen ||
