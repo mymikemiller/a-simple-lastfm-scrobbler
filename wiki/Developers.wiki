@@ -13,11 +13,11 @@ If you have any questions about this API, or suggestions on how to improve it, p
 
 = Details =
 
-The broadcast action is:
+The broadcast action is: `com.example.musicapp.notify.playstatechanged`.
 
-|| PLAYSTATECHANGED || "com.example.musicapp.notify.playstatechanged" || Intent for SLS to listen for ||
+*Replace "com.example.musicapp" with your app's package name.*
 
-which must contain one of these states:
+The intent your app broadcast must contain one of these states:
 
 || State || Integer value || What it means ||
 || START || 0 || A track has started playing ||
@@ -25,13 +25,11 @@ which must contain one of these states:
 || PAUSE || 2 || Playback has been resumed for a/the track ||
 || COMPLETE || 3 || A/The track has finished playing ||
 
-*Replace "com.example.musicapp" with your app's package name.*
-
 It is not necessary to broadcast with state set to COMPLETE for a track to scrobble; if a new track starts playing and START is broadcast, previously broadcasted tracks will scrobble automatically.
 
 If you loop the same track, you have to send a COMPLETE for proper scrobbling.
 
-The possible fields for the broadcast intent (to be put in it's extras bundle) are:
+The possible fields for the intent (to be put in it's extras bundle) are:
 
 || Name || Type || Required || Content ||
 || *state* || *int* || *Yes* || *One of the states above* ||
