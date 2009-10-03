@@ -95,7 +95,7 @@ bCast.putExtra("source", "R");
 sendBroadcast(bCast);
 }}}
 
-*Remember to replace "com.example.musicapp" with your app's package name.*
+*Remember to replace `com.example.musicapp` with your app's package name.*
 
 = Custom Broadcasts =
 
