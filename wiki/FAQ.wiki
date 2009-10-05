@@ -1,4 +1,5 @@
 #summary Frequently Asked Questions / What I assume you want to know
+#labels Featured
 
 To ask a question, simply email [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com]
 
