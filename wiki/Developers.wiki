@@ -30,7 +30,7 @@ The possible fields for the intent (to be put in it's extras bundle) are:
 || Name || Type || Required || Content ||
 || *state* || *int* || *Yes* || *One of the states above* ||
 || *artist* || *String* || *Yes* || *The artist name* || 
-|| *album* || *String* || *Yes* || *The album name* ||
+|| album || String || No || The album name. *Strongly recommended* ||
 || *track* || *String* || *Yes* || *The track name* ||
 || *duration* || *int* || *Yes* || *The duration of the track (in seconds)* ||
 || tracknumber || int || No || Track number on album ||
