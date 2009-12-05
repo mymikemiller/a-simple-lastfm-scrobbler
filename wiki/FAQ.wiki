@@ -46,3 +46,14 @@ Visit [http://libre.fm Libre.fm].
 It means that if checked SLS will submit your scrobles when you've listened to the last track in a playlist.
 
 Currently this only works for Android Music/HTC Hero.
+
+=== What is Scrobble Droid? ===
+
+Scrobble Droid is an app for Android similar to Simple Last.fm Scrobbler.
+
+*It is strongly recommended not to have both Scrobble Droid and Simple Last.fm Scrobbler installed at the same time.*
+
+=== What does "Scrobble Droid Apps" mean? ===
+
+"Scrobble Droid Apps" mean all apps who have implemented support for the [http://code.google.com/p/scrobbledroid/wiki/DeveloperAPI Scrobble Droid API], i.e. that can scrobble through Scrobble Droid. So by enabling this in the Supported Apps section, you can scrobble songs played in for instance Meridian Player and RockOn.
+
