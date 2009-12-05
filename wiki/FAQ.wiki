@@ -1,33 +1,33 @@
-#summary Frequently Asked Questions / What I assume you want to know
+#summary Frequently Asked Questions / What I assume someone might want to know
 #labels Featured
 
 To ask a question, simply email [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com]
 
 <wiki:toc max_depth="3" />
 
-=== 1: What is Last.fm? ===
+=== What is Last.fm? ===
 
 A site for music discovery, exploration, socialization, etc. And you can listen to music too!
 
 Visit [http://www.last.fm Last.fm], or see their [http://www.last.fm/help/faq FAQ].
 
-=== 2: Is this a music player? ===
+=== Is this a music player? ===
 
 No, this is a scrobbler, which means that it submits information to Last.fm on what music you listen to. Then you can view your listening history and other statistics (plus much, much more) on your Last.fm profile page.
 
-=== 3: What's new in version XX? ===
+=== What's new in version XX? ===
 
 See [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_scrobbler/assets/changelog.txt this] for a list of changes.
 
-=== 4: Please support app YY ===
+=== Please support app YY ===
 
 I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be assured though, the list of supported apps will grow. (If you are a developer, see [http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/Developers this]).
 
-=== 5: Why don't you add support for Tune-Wiki? ===
+=== Why don't you add support for !TuneWiki? ===
 
-Tune-Wiki already has built in support for scrobbling. In Tune-Wiki, go to Menu -> Settings -> Last.fm Account Settings.
+!TuneWiki already has built in support for scrobbling. In !TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
 
-=== 6: Why won't my track scrobble if put on repeat? (Android Music/HTC Hero) ===
+=== Why won't my track scrobble if put on repeat? (Android Music/HTC Hero) ===
 
 This is an unfortunate bug/reality. As Android Music and HTC Hero currently work, if you put a single track on repeat, it won't scrobble as many times as is correct. This is because AM / HTCH doesn't submit enough information to external apps.
 
@@ -35,8 +35,14 @@ If you have more than one track in your repeated playlist, scrobbling will be fi
 
 As soon as I find a way to fix this, I will.
 
-=== 7: What is Libre.fm? ===
+=== What is Libre.fm? ===
 
 A new website, similar in ambition to Last.fm.
 
 Visit [http://libre.fm Libre.fm].
+
+=== What does 'Also on playlist finish' in the options screen mean? ===
+
+It means that if checked SLS will submit your scrobles when you've listened to the last track in a playlist.
+
+Currently this only works for Android Music/HTC Hero.
