@@ -55,4 +55,4 @@ Scrobble Droid is an app for Android similar to Simple Last.fm Scrobbler.
 
 === What does "Scrobble Droid Apps" mean? ===
 
-"Scrobble Droid Apps" mean all apps who have implemented support for the [http://code.google.com/p/scrobbledroid/wiki/DeveloperAPI Scrobble Droid API], i.e. that can scrobble through Scrobble Droid. So by enabling this in the Supported Apps section, you can scrobble songs played in for instance Meridian Player and [http://abrantix.org/rockon.php RockOn].
+"Scrobble Droid Apps" mean all apps who have implemented support for the [http://code.google.com/p/scrobbledroid/wiki/DeveloperAPI Scrobble Droid API], i.e. that can scrobble through Scrobble Droid. So by enabling this in the Supported Apps section, you can scrobble songs played in for instance [http://sites.google.com/site/eternalsandbox/Home/meridian-video-player Meridian Player] and [http://abrantix.org/rockon.php RockOn].
