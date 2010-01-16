@@ -35,7 +35,7 @@ The possible fields for the intent (to be put in it's extras bundle) are:
 || album || String || No || The album name. *Strongly recommended* ||
 || *track* || *String* || *Yes* || *The track name* ||
 || *duration* || *int* || *Yes* || *The duration of the track (in seconds)* ||
-|| tracknumber || int || No || Track number on album ||
+|| track-number || int || No || Track number on album ||
 || mbid || String || No || A Track-ID from [http://musicbrainz.org/doc/TrackID MusicBrainz] ||
 || source || String || No || How the user listens to the music - see table below. Default is "P" ||
 
@@ -97,7 +97,7 @@ bCast.putExtra("artist", "Yohanna");
 bCast.putExtra("album", "Eurovision Song Contest: Moscow 2009 (disc 2)");
 bCast.putExtra("track", "Is It True? (Iceland)");
 bCast.putExtra("duration", 181);
-bCast.putExtra("tracknumber", 3);
+bCast.putExtra("track-number", 3);
 bCast.putExtra("mbid", "ceb9d062-145c-4831-839b-3be53e9d5549");
 bCast.putExtra("source", "R");
 sendBroadcast(bCast);
