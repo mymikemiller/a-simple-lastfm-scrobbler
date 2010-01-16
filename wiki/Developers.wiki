@@ -7,15 +7,15 @@
 
 Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the all the account management, network requests and error-handling etc.
 
-You just have to implement the behavior below, then send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about it. I'll then quickly implement a new listener in SLS, which is done in less than a day.
+You just have to implement the behavior below, and it should just work. *This version of the API has not been implemented as of version 1.2.1. It will be available in a future release.
 
-If you have any questions about this API, or suggestions on how to improve it, please email me.
+I'd appreciate it if you'd send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about any apps using this API. That way I can add them to the list of supported apps. 
+
+If you have any questions about this API, or suggestions on how to improve it, please just email me.
 
 = Details =
 
-The broadcast action is: `com.example.musicapp.notify.playstatechanged`.
-
-*Replace "com.example.musicapp" with your app's package name.*
+The broadcast action is: `com.adam.aslfms.notify.playstatechanged`.
 
 The intent your app broadcast must contain one of these states:
 
@@ -28,6 +28,8 @@ The intent your app broadcast must contain one of these states:
 The possible fields for the intent (to be put in it's extras bundle) are:
 
 || Name || Type || Required || Content ||
+|| *app-name* || *String* || *Yes* || *The name of the music app* ||
+|| *app-package* || *String* || *Yes* || *The package of the music app* ||
 || *state* || *int* || *Yes* || *One of the states above* ||
 || *artist* || *String* || *Yes* || *The artist name* || 
 || album || String || No || The album name. *Strongly recommended* ||
@@ -59,8 +61,10 @@ It is not necessary to broadcast with state set to COMPLETE for a track to scrob
 This sends a broadcast that Chris Cornell's song "You Know My Name" has started playing, and will scrobble any previously playing tracks:
 
 {{{
-Intent bCast = new Intent("com.example.musicapp.notify.playstatechanged");
+Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
 bCast.putExtra("state", START);
+bCast.putExtra("app-name", "Example App");
+bCast.putExtra("app-package", "com.example.exampleapp");
 bCast.putExtra("artist", "Chris Cornell");
 bCast.putExtra("album", "Casino Royale");
 bCast.putExtra("track", "You Know My Name");
@@ -71,8 +75,10 @@ sendBroadcast(bCast);
 And this says that James Marster's song "Looking At You" has finished playing and should be scrobbled: 
 
 {{{
-Intent bCast = new Intent("com.example.musicapp.notify.playstatechanged");
+Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
 bCast.putExtra("state", COMPLETE);
+bCast.putExtra("app-name", "Example App");
+bCast.putExtra("app-package", "com.example.exampleapp");
 bCast.putExtra("artist", "James Marsters");
 bCast.putExtra("album", "Like A Waterfall");
 bCast.putExtra("track", "Looking At You");
@@ -83,8 +89,10 @@ sendBroadcast(bCast);
 This might be if you have a radio app, which just started playing a new track:
 
 {{{
-Intent bCast = new Intent("com.example.musicapp.notify.playstatechanged");
+Intent bCast = new Intent("com.adam.aslfms.notify.playstatechanged");
 bCast.putExtra("state", START);
+bCast.putExtra("app-name", "Example App");
+bCast.putExtra("app-package", "com.example.exampleapp");
 bCast.putExtra("artist", "Yohanna");
 bCast.putExtra("album", "Eurovision Song Contest: Moscow 2009 (disc 2)");
 bCast.putExtra("track", "Is It True? (Iceland)");
@@ -94,8 +102,6 @@ bCast.putExtra("mbid", "ceb9d062-145c-4831-839b-3be53e9d5549");
 bCast.putExtra("source", "R");
 sendBroadcast(bCast);
 }}}
-
-*Remember to replace `com.example.musicapp` with your app's package name.*
 
 = Custom Broadcasts =
 
