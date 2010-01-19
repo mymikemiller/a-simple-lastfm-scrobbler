@@ -7,7 +7,7 @@
 
 Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the all the account management, network requests and error-handling etc.
 
-You just have to implement the behavior below, and it should just work. *This version of the API has not been implemented as of version 1.2.1. It will be available in a future release.
+You just have to implement the behavior below, and it should just work. *This version of the API has first been implemented in version 1.2.3 of SLS (the trunk of the svn repository).*
 
 I'd appreciate it if you'd send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about any apps using this API. That way I can add them to the list of supported apps. 
 
@@ -102,6 +102,16 @@ bCast.putExtra("mbid", "ceb9d062-145c-4831-839b-3be53e9d5549");
 bCast.putExtra("source", "R");
 sendBroadcast(bCast);
 }}}
+
+= Internals =
+
+The behavioiur to handle these API broadcasts is implemented in the BroadcastReceiver [http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/receiver/SLSAPIReceiver.java SLSAPIReceiver]. It shouldn't be necessary to examine it, but could further explain the API. 
+
+= A user's perspective = 
+
+When a user starts playing music in a music app using this api, she will automatically have her music scrobbled. The first broadcast to be sent to SLS will create an entry in the Supported Apps section, where the user can disable/enable scrobbling from that application (it is enabled by default).
+
+To make this work properly, the two fields 'app-name' and 'app-package' are crucial. 'app-name' is the string that gets displayed to the user, and 'app-package' is what identifies the source of the music played. This should be the "root package" (or whatever it's called) of the music app, and it should never change. 
 
 = Custom Broadcasts =
 
