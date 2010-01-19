@@ -105,7 +105,7 @@ sendBroadcast(bCast);
 
 = Internals =
 
-The behavioiur to handle these API broadcasts is implemented in the BroadcastReceiver [http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/receiver/SLSAPIReceiver.java SLSAPIReceiver]. It shouldn't be necessary to examine it, but could further explain the API. 
+The behavioiur to handle these API broadcasts is implemented in the !BroadcastReceiver [http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/receiver/SLSAPIReceiver.java SLSAPIReceiver]. It shouldn't be necessary to examine it, but could further explain the API. 
 
 = A user's perspective = 
 
