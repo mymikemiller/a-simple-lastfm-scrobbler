@@ -29,6 +29,8 @@ But if there is no ticket for app YY [http://code.google.com/p/a-simple-lastfm-s
 
 !TuneWiki already has built in support for scrobbling. In !TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
 
+Also, check this out: http://forums.tunewiki.com/index.php?showtopic=1085
+
 === Why won't my track scrobble if put on repeat? (Android Music/HTC Hero) ===
 
 This is an unfortunate bug/reality. As Android Music and HTC Hero currently work, if you put a single track on repeat, it won't scrobble as many times as is correct. This is because AM / HTCH doesn't submit enough information to external apps.
