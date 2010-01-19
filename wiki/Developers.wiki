@@ -111,7 +111,7 @@ The behavioiur to handle these API broadcasts is implemented in the !BroadcastRe
 
 When a user starts playing music in a music app using this api, she will automatically have her music scrobbled. The first broadcast to be sent to SLS will create an entry in the Supported Apps section, where the user can disable/enable scrobbling from that application (it is enabled by default).
 
-To make this work properly, the two fields 'app-name' and 'app-package' are crucial. 'app-name' is the string that gets displayed to the user, and 'app-package' is what identifies the source of the music played. This should be the "root package" (or whatever it's called) of the music app, and it should never change. 
+To make this work properly, the two fields _app-name_ and _app-package_ are crucial. _app-name_ is the string that gets displayed to the user, and _app-package_ is what identifies the source of the music played. This should be the "root package" (or whatever it's called) of the music app, and it should never change. 
 
 = Custom Broadcasts =
 
