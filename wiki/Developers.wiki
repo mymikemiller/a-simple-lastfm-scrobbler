@@ -134,7 +134,7 @@ SLS aspires to never crash, so if it does, please tell me. Whatever you send it,
 
 == Other ==
 
-[mailto:simple.lfm.scrobbler@gmail.com Email me], and I'll answer as quickly as I can. Saved LogCats can be useful.
+[mailto:simple.lfm.scrobbler@gmail.com Email me], and I'll answer as quickly as I can. Saved !LogCats can be useful.
 
 = Custom Broadcasts =
 
