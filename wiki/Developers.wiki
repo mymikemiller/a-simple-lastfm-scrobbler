@@ -9,7 +9,7 @@ Any application can easily scrobble their music through Simple Last.fm Scrobbler
 
 You just have to implement the behavior below, and it should just work. *This version of the API has first been implemented in version 1.2.3 of SLS (the trunk of the svn repository).*
 
-I'd appreciate it if you'd send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about any apps using this API. That way I can add them to the list of supported apps. 
+I'd appreciate it if you'd send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about any apps using this API. That way I can add them to the list of supported apps. Also, questions are always welcome.
 
 If you have any questions about this API, or suggestions on how to improve it, please just email me.
 
@@ -127,6 +127,14 @@ If your broadcast doesn't seem to get through, first check if SLS actually recei
 If that seems fine, make sure you've logged in to either last.fm or libre.fm (or both). This is one of the first checks that are made when SLS receives an intent, and it will abort if it hasn't authenticated correctly. If this is the cause, you'll get a !LogCat message (information level) saying something like: `"SLSPlayStatusReceiver" : "The user has not authenticated, won't propagate the submission request"`.
 
 Otherwise, check !LogCat forr error-messages of the form `"SLSPlayStatusReceiver" : "Got a bad track from: [some name], ignoring it ([cause of problem])"`.
+
+== Crashes ==
+
+SLS aspires to never crash, so if it does, please tell me. Whatever you send it, it _should_ be fine.
+
+== Other ==
+
+[mailto:simple.lfm.scrobbler@gmail.com Email me], and I'll answer as quickly as I can. Saved LogCats can be useful.
 
 = Custom Broadcasts =
 
