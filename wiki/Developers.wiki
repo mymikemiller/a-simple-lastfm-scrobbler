@@ -126,7 +126,7 @@ If your broadcast doesn't seem to get through, first check if SLS actually recei
 
 If that seems fine, make sure you've logged in to either last.fm or libre.fm (or both). This is one of the first checks that are made when SLS receives an intent, and it will abort if it hasn't authenticated correctly. If this is the cause, you'll get a !LogCat message (information level) saying something like: `"SLSPlayStatusReceiver" : "The user has not authenticated, won't propagate the submission request"`.
 
-Otherwise, check !LogCat forr error-messages of the form `"SLSPlayStatusReceiver" :"Got a bad track from: [some name], ignoring it ([cause of problem])"`.
+Otherwise, check !LogCat forr error-messages of the form `"SLSPlayStatusReceiver" : "Got a bad track from: [some name], ignoring it ([cause of problem])"`.
 
 = Custom Broadcasts =
 
