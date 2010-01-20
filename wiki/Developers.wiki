@@ -122,11 +122,11 @@ To make this work properly, the two fields _app-name_ and _app-package_ are cruc
 == Broadcast doesn't get through ==
 
 If your broadcast doesn't seem to get through, first check if SLS actually receives it. Everytime SLS gets an intent meant for scrobbling, it outputs to !LogCat (debug level):
-"SLSPlayStatusReceiver" : "Action received was: [received intent]"
+`"SLSPlayStatusReceiver" : "Action received was: [received intent]"`
 
-If that seems fine, make sure you've logged in to either last.fm or libre.fm (or both). This is one of the first checks that are made when SLS receives an intent, and it will abort if it hasn't authenticated correctly. If this is the cause, you'll get a !LogCat message (information level) from "SLSPlayStatusReceiver" saying something like: "The user has not authenticated, won't propagate the submission request".
+If that seems fine, make sure you've logged in to either last.fm or libre.fm (or both). This is one of the first checks that are made when SLS receives an intent, and it will abort if it hasn't authenticated correctly. If this is the cause, you'll get a !LogCat message (information level) saying something like: `"SLSPlayStatusReceiver" : "The user has not authenticated, won't propagate the submission request"`.
 
-Otherwise, check !LogCat forr error-messages of the form "SLSPlayStatusReceiver" : "Got a bad track from: [some name], ignoring it ([cause of problem])".
+Otherwise, check !LogCat forr error-messages of the form `"SLSPlayStatusReceiver" :`"Got a bad track from: [some name], ignoring it ([cause of problem])"`.
 
 = Custom Broadcasts =
 
