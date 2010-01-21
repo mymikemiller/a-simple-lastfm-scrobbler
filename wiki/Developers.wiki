@@ -130,7 +130,7 @@ Otherwise, check !LogCat forr error-messages of the form `"SLSPlayStatusReceiver
 
 == Crashes ==
 
-SLS aspires to never crash, so if it does, please tell me. Whatever you send it, it _should_ be fine.
+SLS aspires to never crash, so if it does, please tell me. Whatever data you send, it _should_ be fine.
 
 == Other ==
 
