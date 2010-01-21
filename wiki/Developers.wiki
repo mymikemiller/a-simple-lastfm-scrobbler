@@ -20,24 +20,24 @@ The broadcast action is: `com.adam.aslfms.notify.playstatechanged`.
 The intent your app broadcast must contain one of these states:
 
 || State || Integer value || What it means ||
-|| START || 0 || A track has started playing ||
-|| RESUME || 1 || Playback has been paused for a/the track ||
-|| PAUSE || 2 || Playback has been resumed for a/the track ||
-|| COMPLETE || 3 || A/The track has finished playing ||
+|| START || 0 || A track has started playing. ||
+|| RESUME || 1 || Playback has been paused for a/the track. ||
+|| PAUSE || 2 || Playback has been resumed for a/the track. ||
+|| COMPLETE || 3 || A/The track has finished playing. ||
 
 The possible fields for the intent (to be put in it's extras bundle) are:
 
 || Name || Type || Required || Content ||
-|| *app-name* || *String* || *Yes* || *The name of the music app* ||
-|| *app-package* || *String* || *Yes* || *The package of the music app* ||
-|| *state* || *int* || *Yes* || *One of the states above* ||
-|| *artist* || *String* || *Yes* || *The artist name* || 
-|| album || String || No || The album name. _Strongly recommended_ ||
-|| *track* || *String* || *Yes* || *The track name* ||
-|| *duration* || *int* || *Yes* || *The duration of the track (in seconds)* ||
-|| track-number || int || No || Track number on album ||
-|| mbid || String || No || A Track-ID from [http://musicbrainz.org/doc/TrackID MusicBrainz] ||
-|| source || String || No || How the user listens to the music - see table below. Default is "P" ||
+|| *app-name* || *String* || *Yes* || *The name of the music app.* ||
+|| *app-package* || *String* || *Yes* || *The package of the music app.* ||
+|| *state* || *int* || *Yes* || *One of the states above.* ||
+|| *artist* || *String* || *Yes* || *The artist name.* || 
+|| album || String || No || The album name. _Strongly recommended._ ||
+|| *track* || *String* || *Yes* || *The track name.* ||
+|| *duration* || *int* || *Yes* || *The duration of the track (in seconds).* ||
+|| track-number || int || No || Track number on album. ||
+|| mbid || String || No || A Track-ID from [http://musicbrainz.org/doc/TrackID MusicBrainz]. ||
+|| source || String || No || How the user listens to the music - see table below. Default is "P". ||
 
 Table of source values:
 || Value || How the track was chosen ||
