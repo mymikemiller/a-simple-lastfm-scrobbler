@@ -32,7 +32,7 @@ The possible fields for the intent (to be put in it's extras bundle) are:
 || *app-package* || *String* || *Yes* || *The package of the music app* ||
 || *state* || *int* || *Yes* || *One of the states above* ||
 || *artist* || *String* || *Yes* || *The artist name* || 
-|| album || String || No || The album name. *Strongly recommended* ||
+|| album || String || No || The album name. _Strongly recommended_ ||
 || *track* || *String* || *Yes* || *The track name* ||
 || *duration* || *int* || *Yes* || *The duration of the track (in seconds)* ||
 || track-number || int || No || Track number on album ||
