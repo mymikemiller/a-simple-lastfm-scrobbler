@@ -7,7 +7,7 @@
 
 Any application can easily scrobble their music through Simple Last.fm Scrobbler (SLS). It is just to send certain broadcasts with the appropriate track information, and SLS will do the all the account management, network requests and error-handling etc.
 
-You just have to implement the behavior below, and it should just work. *This version of the API has first been implemented in version 1.2.3 of SLS (the trunk of the svn repository).*
+You just have to implement the behavior below, and it should just work. *This version of the API has first been implemented in version 1.2.3 of SLS, now available on Android Market (and [http://code.google.com/p/a-simple-lastfm-scrobbler/downloads/list here]).*
 
 I'd appreciate it if you'd send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about any apps using this API. That way I can add them to the list of supported apps. Also, questions are always welcome.
 
@@ -115,9 +115,9 @@ To make this work properly, the two fields _app-name_ and _app-package_ are cruc
 
 = Troubleshooting =
 
-== Important ==
+== General ==
 
-*This API was first implemented in version 1.2.3 of SLS (currently only available as the trunk of the svn repository).*
+*This API was first implemented in version 1.2.3 of SLS, available on Android Market (and [http://code.google.com/p/a-simple-lastfm-scrobbler/downloads/list here]).*
 
 == Broadcast doesn't get through ==
 
