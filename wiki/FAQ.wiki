@@ -59,7 +59,7 @@ Currently this only works for Android Music/HTC Hero.
 
 === What do you do with my password? ===
 
-All passwords are stored in the encrypted form of an [http://en.wikipedia.org/wiki/MD5 MD5 hash]. This means that it is impossible (or rather very, very time consuming) to extract the original password from SLS. This is actually how most websites and apps store passwords, including the official Last.fm Application.
+All passwords are stored in the encrypted form of an [http://en.wikipedia.org/wiki/MD5 MD5 hash]. This means that it is impossible (or rather very, very time consuming) to extract the original password from SLS. This is actually how most websites and apps store passwords.
 
 To see where in SLS (the MD5 hash of) the password is actually used, take a look at these three classes: [http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/EditUserCredentials.java Here] you enter the password, [http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/util/AppSettings.java here] is how SLS accesses the password, and [http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/service/Handshaker.java here] is where it is sent to Last.fm.
 
