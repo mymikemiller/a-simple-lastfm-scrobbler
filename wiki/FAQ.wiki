@@ -25,6 +25,12 @@ I'm always looking for new apps to support, but almost always it requires some w
 
 But if there is no ticket for app YY [http://code.google.com/p/a-simple-lastfm-scrobbler/issues/list here], email me or create a ticket yourself and I'll get right on it.
 
+=== Support for Spotify ===
+
+This would be awesome, as I use Spotify often myself. But currently it isn't feasible. Here are some links to the Spotify support forum requresting scrobbling support:
+
+http://getsatisfaction.com/spotify/topics/add_last_fm_scrobbling_to_the_android_client
+
 === Why don't you add support for !TuneWiki? ===
 
 !TuneWiki already has built in support for scrobbling. In !TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
