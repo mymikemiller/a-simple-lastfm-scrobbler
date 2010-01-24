@@ -47,7 +47,7 @@ As soon as I find a way to fix this, I will.
 
 === Why doesn't the scrobble point work? ===
 
-Unfortunately, SLS doesn't know the duration of music played in Android Music / Hero Music. Therefore, the scrobble point can't work for those two apps, but instead the music is scrobbled after 30 seconds played.
+Unfortunately, SLS can not know the duration of music played in Android Music / Hero Music. Therefore, the scrobble point doesn't work for those two apps, but instead the music is scrobbled after 30 seconds played.
 
 === What is Libre.fm? ===
 
