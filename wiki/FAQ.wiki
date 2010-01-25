@@ -29,11 +29,23 @@ Nothing needs to be done, just play music and scrobbling will start automaticall
 
 Nothing needs to be done, just play music and scrobbling will start automatically.
 
+=== Meridian Player ===
+
+--
+
+=== RockOn ===
+
+--
+
 === MixZing ===
 
 Open MixZing -> Press Menu -> Settings. Check the box next to "Scrobble to last.fm". When you do you get a popup that asks you if you want to install Scrobble Droid, say "No Thanks". Now scrobbling will work through SLS.
 
 If you go to the Supported Apps screen in SLS, you will see an entry labeled "Scrobble Droid Apps". It is through this that MixZing scrobbles.
+
+=== Archos Music Player ===
+
+--
 
 == Please support app YY ==
 
