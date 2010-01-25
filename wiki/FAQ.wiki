@@ -21,7 +21,7 @@ See [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_s
 
 == How to enable scrobbling in a music app ==
 
-See below for specifics
+See below for details on specific players.
 
 === Android Music Player ===
 
