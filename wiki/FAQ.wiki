@@ -45,7 +45,7 @@ If you go to the Supported Apps screen in SLS, you will see an entry labeled "Sc
 
 Open !RockOn -> Press Menu -> More -> Preferences. Check box labeled "Use ScrobbleDroid". The Android Market opens up, search for Scrobble Droid. Just click the back button. Now scrobbling will work through SLS (you do not need to install Scrobble Droid).
 
-If you go to the Supported Apps screen in SLS, you will see an entry labeled "Scrobble Droid Apps". It is through this that Meridian Player scrobbles.
+If you go to the Supported Apps screen in SLS, you will see an entry labeled "Scrobble Droid Apps". It is through this that !RockOn scrobbles.
 
 === !MixZing ===
 
