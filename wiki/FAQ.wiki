@@ -5,39 +5,39 @@ To ask a question, simply email [mailto:simple.lfm.scrobbler@gmail.com simple.lf
 
 <wiki:toc max_depth="3" />
 
-=== What is Last.fm? ===
+== What is Last.fm? ==
 
 A site for music discovery, exploration, socialization, etc. And you can listen to music too!
 
 Visit [http://www.last.fm Last.fm], or see their [http://www.last.fm/help/faq FAQ].
 
-=== Is this a music player? ===
+== Is this a music player? ==
 
 No, this is a scrobbler, which means that it submits information to Last.fm on what music you listen to. Then you can view your listening history and other statistics (plus much, much more) on your Last.fm profile page.
 
-=== What's new in version XX? ===
+== What's new in version XX? ==
 
 See [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_scrobbler/assets/changelog.txt this] for a list of changes.
 
-=== Please support app YY ===
+== Please support app YY ==
 
 I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be assured though, the list of supported apps will grow. (If you are a developer, see [http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/Developers this]).
 
 But if there is no ticket for app YY [http://code.google.com/p/a-simple-lastfm-scrobbler/issues/list here], email me or create a ticket yourself and I'll get right on it.
 
-=== Support for Spotify ===
+== Support for Spotify ==
 
 This would be awesome, as I use Spotify often myself. But currently it isn't feasible. Here are some links to the Spotify support forum requesting scrobbling support:
 
 http://getsatisfaction.com/spotify/topics/add_last_fm_scrobbling_to_the_android_client
 
-=== Why don't you add support for !TuneWiki? ===
+== Why don't you add support for !TuneWiki? ==
 
 !TuneWiki already has built in support for scrobbling. In !TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
 
 Also, check this out: http://forums.tunewiki.com/index.php?showtopic=1085
 
-=== Why won't my track scrobble if put on repeat? (Android Music/Hero Music) ===
+== Why won't my track scrobble if put on repeat? (Android Music/Hero Music) ==
 
 This is an unfortunate bug/reality. As Android Music and Hero Music currently work, if you put a single track on repeat, it won't scrobble as many times as is correct. This is because AM / HTCH doesn't submit enough information to external apps.
 
@@ -45,23 +45,23 @@ If you have more than one track in your repeated playlist, scrobbling will be fi
 
 As soon as I find a way to fix this, I will.
 
-=== Why doesn't the scrobble point work? ===
+== Why doesn't the scrobble point work? ==
 
 Unfortunately, SLS can not know the duration of music played in Android Music / Hero Music. Therefore, the scrobble point doesn't work for those two apps, but instead the music is scrobbled after 30 seconds played.
 
-=== What is Libre.fm? ===
+== What is Libre.fm? ==
 
 A new website, similar in ambition to Last.fm.
 
 Visit [http://libre.fm Libre.fm].
 
-=== What does 'Also on playlist finish' in the options screen mean? ===
+== What does 'Also on playlist finish' in the options screen mean? ==
 
 It means that if checked SLS will submit your scrobles when you've listened to the last track in a playlist.
 
 Currently this only works for Android Music/HTC Hero.
 
-=== What do you do with my password? ===
+== What do you do with my password? ==
 
 All passwords are stored in the encrypted form of an [http://en.wikipedia.org/wiki/MD5 MD5 hash]. This means that it is impossible (or rather very, very time consuming) to extract the original password from SLS. This is actually how most/many websites and apps store passwords.
 
@@ -69,12 +69,12 @@ To see where in SLS (the MD5 hash of) the password is actually used, take a look
 
 You can at any time log out of your accounts by going to `User credentials -> Clear credentials` (or `User credentials -> Last.fm -> Clear credentials` for clearing just your Last.fm account). This will remove the MD5 hash and your username from your phone. (It also removes the unsubmitted cached scrobbles and any submission statistics, so be careful).
 
-=== What is Scrobble Droid? ===
+== What is Scrobble Droid? ==
 
 Scrobble Droid is an app for Android similar to Simple Last.fm Scrobbler.
 
 *It is strongly recommended not to have both Scrobble Droid and Simple Last.fm Scrobbler installed at the same time.*
 
-=== What does "Scrobble Droid Apps" mean? ===
+== What does "Scrobble Droid Apps" mean? ==
 
 "Scrobble Droid Apps" mean all apps who have implemented support for the [http://code.google.com/p/scrobbledroid/wiki/DeveloperAPI Scrobble Droid API], i.e. that can scrobble through Scrobble Droid. So by enabling this in the Supported Apps section, you can scrobble songs played in for instance [http://sites.google.com/site/eternalsandbox/Home/meridian-video-player Meridian Player] and [http://abrantix.org/rockon.php RockOn].
