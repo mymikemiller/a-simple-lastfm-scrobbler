@@ -21,7 +21,7 @@ See [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_s
 
 == How to enable scrobbling in a music app ==
 
-asdf
+See below for specifics
 
 === Android Music Player ===
 
@@ -47,7 +47,9 @@ If you go to the Supported Apps screen in SLS, you will see an entry labeled "Sc
 
 === Archos Music Player ===
 
-asdf
+Nothing needs to be done, just play music and scrobbling will start automatically.
+
+If you go to the Supported Apps screen in SLS, you will see an entry labeled "Android Music Player". It is through this that the Archos Music Player (together with the Android Music Player) currently scrobbles (under discussion [http://forum.archosfans.com/viewtopic.php?f=47&t=27830&st=0&sk=t&sd=a&sid=b8f28960c7d66063be952226b9e976c1&start=20 here]).
 
 == Please support app YY ==
 
