@@ -31,11 +31,11 @@ Nothing needs to be done, just play music and scrobbling will start automaticall
 
 === Meridian Player ===
 
---
+asdf
 
 === RockOn ===
 
---
+asdf
 
 === MixZing ===
 
@@ -45,7 +45,7 @@ If you go to the Supported Apps screen in SLS, you will see an entry labeled "Sc
 
 === Archos Music Player ===
 
---
+asdf
 
 == Please support app YY ==
 
