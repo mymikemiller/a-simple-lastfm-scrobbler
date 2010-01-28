@@ -89,7 +89,7 @@ As soon as I find a way to fix this, I will.
 
 First, check if you have any other scrobblers beside SLS installed. These might include the official Last.fm app, and Scrobble Droid. The Last.fm app, Scrobble Droid and SLS all scrobble from the default Android Music app, so you have to disable scrobbling (for that app) in two of these.
 
-Scrobble Droid almost always conflict with SLS, see http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/FAQ?ts=1264719474&updated=FAQ#What_is_Scrobble_Droid? below].
+Scrobble Droid almost always conflict with SLS, see [http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/FAQ?ts=1264719474&updated=FAQ#What_is_Scrobble_Droid? below].
 
 == Why doesn't the scrobble point work? ==
 
