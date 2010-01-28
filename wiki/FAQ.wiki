@@ -85,6 +85,12 @@ If you have more than one track in your repeated playlist, scrobbling will be fi
 
 As soon as I find a way to fix this, I will.
 
+== Why does a song get scrobbled twice? ==
+
+First, check if you have any other scrobblers beside SLS installed. These might include the official Last.fm app, and Scrobble Droid. The Last.fm app, Scrobble Droid and SLS all scrobble from the default Android Music app, so you have to disable scrobbling (for that app) in two of these.
+
+Scrobble Droid almost always conflict with SLS, see [FAQ below].
+
 == Why doesn't the scrobble point work? ==
 
 Unfortunately, SLS can not know the duration of music played in Android Music / Hero Music. Therefore, the scrobble point doesn't work for those two apps, but instead the music is scrobbled after 30 seconds played.
