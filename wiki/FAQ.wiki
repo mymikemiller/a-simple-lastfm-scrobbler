@@ -95,7 +95,7 @@ If this doesn't end your double-scrobbling, email me and I'll try to fix it.
 
 == Why doesn't the scrobble point work? ==
 
-*This should be fixed in version 1.2.6*
+*This should be fixed in version 1.2.6.*
 
 Unfortunately, SLS can not know the duration of music played in Android Music / Hero Music. Therefore, the scrobble point doesn't work for those two apps, but instead the music is scrobbled after 30 seconds played.
 
