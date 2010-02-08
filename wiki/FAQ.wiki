@@ -59,6 +59,10 @@ Nothing needs to be done, just play music and scrobbling will start automaticall
 
 If you go to the Supported Apps screen in SLS, you will see an entry labeled `Android Music Player`. It is through this that the Archos Music Player (together with the Android Music Player) currently scrobbles (under discussion [http://forum.archosfans.com/viewtopic.php?f=47&t=27830&st=0&sk=t&sd=a&sid=b8f28960c7d66063be952226b9e976c1&start=20 here]).
 
+=== Rhapsody Android Beta ===
+
+The same as for the Archos Music Player above. The player can be downloaded [http://www.rhapsody.com/android/download here].
+
 == Please support app YY ==
 
 I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be assured though, the list of supported apps will grow. (If you are a developer, see [http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/Developers this]).
