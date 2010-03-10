@@ -75,7 +75,11 @@ This would be awesome, as I use Spotify often myself, but currently it isn't fea
 
 http://getsatisfaction.com/spotify/topics/add_last_fm_scrobbling_to_the_android_client
 
-== Why don't you add support for !TuneWiki? ==
+== Support for Pandora ==
+
+Perhaps the most requested feature, but as with Spotify it is not up to me. There is an oppen issue about it [http://code.google.com/p/a-simple-lastfm-scrobbler/issues/detail?id=20 here].
+
+== Ssupport for !TuneWiki? ==
 
 !TuneWiki already has built in support for scrobbling. In !TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
 
