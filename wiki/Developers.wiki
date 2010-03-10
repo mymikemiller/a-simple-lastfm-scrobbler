@@ -9,7 +9,7 @@ Any application can easily scrobble their music through Simple Last.fm Scrobbler
 
 You just have to implement the behavior below, and it should just work. *This version of the API has first been implemented in version 1.2.3 of SLS, now available on Android Market (and [http://code.google.com/p/a-simple-lastfm-scrobbler/downloads/list here]).*
 
-I'd appreciate it if you'd send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about any apps using this API. That way I can add them to the list of supported apps. Also, questions are always welcome.
+I'd appreciate it if you'd send an email to [mailto:simple.lfm.scrobbler@gmail.com simple.lfm.scrobbler@gmail.com] and tell me about any apps using this API. That way I can add them to the list of supported apps. Any questions are always welcome.
 
 If you have any questions about this API, or suggestions on how to improve it, please just email me.
 
