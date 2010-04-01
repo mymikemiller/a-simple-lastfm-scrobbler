@@ -79,11 +79,28 @@ This would be awesome, as I use Spotify often myself, but currently it isn't fea
 
 Perhaps the most requested feature, but as with Spotify it is not up to me. There is an open issue about it [http://code.google.com/p/a-simple-lastfm-scrobbler/issues/detail?id=20 here].
 
-== Ssupport for !TuneWiki? ==
+== Support for !TuneWiki? ==
 
 !TuneWiki already has built in support for scrobbling. In !TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
 
 Also, check this out: http://forums.tunewiki.com/index.php?showtopic=1085
+
+== Why won't it scrobble? ==
+
+If the track doesn't scrobble att all, check the following:
+
+ * That you've entered your account credentials successfully (and not changed them later)
+ * That the music app you're using shows upp in the Enabled Apps screen, and that it is enabled
+ * That you've enabled scrobbling in the Options screen.
+ * If have a Motorola Cliq/Dext, see this [http://code.google.com/p/a-simple-lastfm-scrobbler/issues/detail?id=25 issue]
+
+If it doesn't scrobble, but the track shows up in the local cache:
+
+ * Check your settings for when to submit in the Options screen
+ * You might also need to check the network options, and perhaps even the roaming preferences.
+ * Check your network status
+
+If none of this helps, email me.
 
 == Why won't my track scrobble if put on repeat? (Android Music/Hero Music) ==
 
