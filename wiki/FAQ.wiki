@@ -71,9 +71,7 @@ But if there is no ticket for app YY [http://code.google.com/p/a-simple-lastfm-s
 
 == Support for Spotify ==
 
-This would be awesome, as I use Spotify often myself, but currently it isn't feasible. There is a [http://getsatisfaction.com/spotify/topics/add_last_fm_scrobbling_to_the_android_client thread] on the Spotify support forum requesting scrobbling support. 
-
-[http://code.google.com/p/a-simple-lastfm-scrobbler/issues/detail?id=11 Here's] the open issue about it.
+Spotify now [http://www.spotify.com/int/blog/archives/2010/05/25/android-update-0404/ scrobbles], although not through Simple Last.fm Scrobbler.
 
 == Support for Pandora ==
 
