@@ -103,6 +103,8 @@ bCast.putExtra("source", "R");
 sendBroadcast(bCast);
 }}}
 
+The app (cubed) [http://github.com/fabrantes/rockonnggl/blob/master/src/org/abrantix/rockon/rockonnggl/RockOnNextGenService.java implements] this API.
+
 = Internals =
 
 The behavioiur to handle these API broadcasts is implemented in the !BroadcastReceiver [http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/receiver/SLSAPIReceiver.java SLSAPIReceiver]. It shouldn't be necessary to examine it, but could further explain the API. 
