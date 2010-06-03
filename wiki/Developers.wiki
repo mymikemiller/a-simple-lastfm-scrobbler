@@ -103,7 +103,7 @@ bCast.putExtra("source", "R");
 sendBroadcast(bCast);
 }}}
 
-The app (cubed) [http://github.com/fabrantes/rockonnggl/blob/master/src/org/abrantix/rockon/rockonnggl/RockOnNextGenService.java implements] this API.
+The app ³ (cubed) [http://github.com/fabrantes/rockonnggl/blob/master/src/org/abrantix/rockon/rockonnggl/RockOnNextGenService.java implements] this API.
 
 = Internals =
 
