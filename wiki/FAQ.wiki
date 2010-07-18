@@ -21,7 +21,7 @@ See [http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_s
 
 == How to enable scrobbling in a music app ==
 
-For any scrobbling to work, you first have to enter your Last.fm (or Libre.fm) account details into SLS and authenticate. When you've done that, see below for details on specific players.
+For any scrobbling to work, you first have to enter your Last.fm (or Libre.fm) account details into SLS and authenticate. When you've done that, see below for details on specific players. (Not all players are explained here, but usually it is kinda straight forward).
 
 === Android Music Player ===
 
