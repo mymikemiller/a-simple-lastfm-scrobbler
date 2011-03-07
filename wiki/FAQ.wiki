@@ -63,6 +63,10 @@ If you go to the Supported Apps screen in SLS, you will see an entry labeled `An
 
 The same as for the Archos Music Player above. The player can be downloaded [http://www.rhapsody.com/android/download here].
 
+=== Winamp ===
+
+You do not need to check the "Enable Scrobbling" checkbox for scrobbling to work. It just works.
+
 === Other Players ===
 
 Most players that are capable of scrobbling through SLS require that you enable it in their settings screen. Often, just press Menu -> Settings/Preferences and then enable something called 'Last.fm' or 'Scrobbling' or similar.
