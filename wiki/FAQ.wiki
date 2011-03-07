@@ -65,7 +65,7 @@ The same as for the Archos Music Player above. The player can be downloaded [htt
 
 === Winamp ===
 
-You do not need to check the "Enable Scrobbling" checkbox for scrobbling to work. It just works.
+You do not need to check the "Enable Scrobbling" checkbox in the Winamp Settings screen for scrobbling to work. It just works.
 
 === Other Players ===
 
