@@ -94,6 +94,12 @@
                 android:value=".SettingsActivity" />
         </activity>
 
+        <!-- other activities -->
+        <activity
+            android:name=".receiver.NotificationReceiverActivity"
+            android:exported="true">
+        </activity>
+
         <!-- the service -->
         <service
             android:name="com.adam.aslfms.service.ScrobblingService"
@@ -312,7 +318,14 @@
 		<action android:name="com.android.music.metachanged" />
 		<action android:name="com.android.music.playstatechanged" />
 	    </intent-filter>
-	</receiver>	
+	</receiver>
+    <receiver android:name="com.adam.aslfms.receiver.TipReceiver"
+        android:enabled="true">
+        <intent-filter>
+            <action android:name="tip" >
+            </action>
+        </intent-filter>
+    </receiver>
 
         <!-- - will probably interfere badly with Winamp <receiver android:name="com.adam.aslfms.receiver.LastFmAPIReceiver" 
             android:exported="true" android:enabled="true"> <intent-filter> <action android:name="fm.last.android.metachanged" 

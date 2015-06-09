@@ -6,8 +6,8 @@ android {
 
     defaultConfig {
         applicationId "com.adam.aslfms"
-        minSdkVersion 7
-        targetSdkVersion 12
+        minSdkVersion 16
+        targetSdkVersion 16
 
         testApplicationId "com.adam.aslfms.test"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"

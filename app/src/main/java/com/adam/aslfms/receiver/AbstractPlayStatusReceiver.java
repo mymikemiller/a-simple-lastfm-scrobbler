@@ -100,8 +100,15 @@ public abstract class AbstractPlayStatusReceiver extends BroadcastReceiver {
 			// submit track for the ScrobblingService
 			InternalTrackTransmitter.appendTrack(mTrack);
 
+			Tribucycle.setNowPlaying(context, mTrack.getArtist());
+
+//			Intent broadcastIntent = new Intent();
+//			broadcastIntent.setAction("tip");
+//			broadcastIntent.putExtra("name", mTrack.getArtist());
+//			context.sendBroadcast(broadcastIntent);
+
 			// start/call the Scrobbling Service
-			context.startService(mService);
+			// context.startService(mService); // For now, don't scrobble
 		} catch (IllegalArgumentException e) {
 			Log.i(TAG, "Got a bad track from: "
 					+ ((mMusicAPI == null) ? "null" : mMusicAPI.getName())
