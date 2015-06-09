@@ -19,8 +19,8 @@ public class Tribucycle {
         NotificationCompat.Builder mBuilder =
                 new NotificationCompat.Builder(context)
                         .setSmallIcon(R.mipmap.thumb_up)
-                        .setContentTitle("My notification")
-                        .setContentText("Hello World!");
+                        .setContentTitle(name)
+                        .setContentText("Tap to gift $1");
 
         Intent resultIntent = new Intent(context, NotificationReceiverActivity.class);
         resultIntent.putExtra("name", name);

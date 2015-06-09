@@ -12,7 +12,7 @@ public class NotificationReceiverActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.result);
         String name = getIntent().hasExtra("name") ? getIntent().getExtras().getString("name") : "unknown";
-        Toast.makeText(this, "You tipped " + name + " $1", Toast.LENGTH_LONG).show();
-
+        Toast.makeText(this, "You gave $1 to " + name, Toast.LENGTH_SHORT).show();
+        finish();
     }
 }
