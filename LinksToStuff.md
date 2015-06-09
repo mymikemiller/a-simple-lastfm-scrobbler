@@ -1,0 +1,1 @@
+[Scrobbling in the official client.](http://www.last.fm/group/Last.fm+Android/forum/114391/_/614455)

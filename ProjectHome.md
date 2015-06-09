@@ -1,0 +1,1 @@
+This project has moved to [github.com/tgwizard/sls](http://github.com/tgwizard/sls).

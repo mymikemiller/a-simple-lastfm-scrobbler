@@ -1,0 +1,158 @@
+To ask a question, simply email [simple.lfm.scrobbler@gmail.com](mailto:simple.lfm.scrobbler@gmail.com)
+
+
+
+## What is Last.fm? ##
+
+A site for music discovery, exploration, socialization, etc. And you can listen to music too!
+
+Visit [Last.fm](http://www.last.fm), or see their [FAQ](http://www.last.fm/help/faq).
+
+## Is this a music player? ##
+
+No, this is a scrobbler, which means that it submits information to Last.fm on what music you listen to. Then you can view your listening history and other statistics (plus much, much more) on your Last.fm profile page.
+
+## What's new in version XX? ##
+
+See [this](http://a-simple-lastfm-scrobbler.googlecode.com/svn/trunk/a_simple_lastfm_scrobbler/assets/changelog.txt) for a list of changes.
+
+## How to enable scrobbling in a music app ##
+
+For any scrobbling to work, you first have to enter your Last.fm (or Libre.fm) account details into SLS and authenticate. When you've done that, see below for details on specific players. (Not all players are explained here, but usually it is kinda straight forward).
+
+### Android Music Player ###
+
+Nothing needs to be done, just play music and scrobbling will start automatically.
+
+If you go to the Supported Apps screen in SLS, you will see an entry labeled `Android Music Player`. It is through this that the Android Music Player scrobbles.
+
+### Hero Music Player ###
+
+Nothing needs to be done, just play music and scrobbling will start automatically.
+
+If you go to the Supported Apps screen in SLS, you will see an entry labeled `Hero Music Player`. It is through this that the Hero Music Player scrobbles.
+
+### Meridian Player ###
+
+`Open Meridian Player -> Press Menu -> Preferences`. Scroll down almost to the bottom and check the `last.fm Scrobble` checkbox. Now scrobbling will work through SLS (you do not need to install Scrobble Droid).
+
+If you go to the Supported Apps screen in SLS, you will see an entry labeled "Scrobble Droid Apps". It is through this that Meridian Player scrobbles.
+
+### RockOn ###
+
+`Open !RockOn -> Press Menu -> More -> Preferences`. Check the box labeled `Use ScrobbleDroid`. The Android Market opens up and starts a search for Scrobble Droid. Just click the back button. Now scrobbling will work through SLS (you do not need to install Scrobble Droid).
+
+If you go to the Supported Apps screen in SLS, you will see an entry labeled `"Scrobble Droid Apps"`. It is through this that RockOn scrobbles.
+
+### MixZing ###
+
+`Open MixZing -> Press Menu -> Settings`. Check the box next to `Scrobble to last.fm`. When you do you get a popup that asks you if you want to install Scrobble Droid, say "No Thanks". Now scrobbling will work through SLS (you do not need to install Scrobble Droid).
+
+If you go to the Supported Apps screen in SLS, you will see an entry labeled `"Scrobble Droid Apps"`. It is through this that MixZing scrobbles.
+
+### Archos Music Player ###
+
+Nothing needs to be done, just play music and scrobbling will start automatically.
+
+If you go to the Supported Apps screen in SLS, you will see an entry labeled `Android Music Player`. It is through this that the Archos Music Player (together with the Android Music Player) currently scrobbles (under discussion [here](http://forum.archosfans.com/viewtopic.php?f=47&t=27830&st=0&sk=t&sd=a&sid=b8f28960c7d66063be952226b9e976c1&start=20)).
+
+### Rhapsody Android Beta ###
+
+The same as for the Archos Music Player above. The player can be downloaded [here](http://www.rhapsody.com/android/download).
+
+### Winamp ###
+
+You do not need to check the "Enable Scrobbling" checkbox in the Winamp Settings screen for scrobbling to work. It just works.
+
+### Other Players ###
+
+Most players that are capable of scrobbling through SLS require that you enable it in their settings screen. Often, just press Menu -> Settings/Preferences and then enable something called 'Last.fm' or 'Scrobbling' or similar.
+
+## Please support app YY ##
+
+I'm always looking for new apps to support, but almost always it requires some work on their end as well. Be assured though, the list of supported apps will grow. (If you are a developer, see [this](http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/Developers)).
+
+But if there is no ticket for app YY [here](http://code.google.com/p/a-simple-lastfm-scrobbler/issues/list), email me or create a ticket yourself and I'll get right on it.
+
+## Support for Spotify ##
+
+Spotify now [scrobbles](http://www.spotify.com/int/blog/archives/2010/05/25/android-update-0404/), although not through Simple Last.fm Scrobbler.
+
+## Support for Pandora ##
+
+Perhaps the most requested feature, but as with Spotify it is not up to me. There is an open issue about it [here](http://code.google.com/p/a-simple-lastfm-scrobbler/issues/detail?id=20).
+
+## Support for TuneWiki? ##
+
+TuneWiki already has built in support for scrobbling. In TuneWiki, go to Menu -> Settings -> Last.fm Account Settings.
+
+Also, check this out: http://forums.tunewiki.com/index.php?showtopic=1085
+
+## Why won't it scrobble? ##
+
+If the track doesn't scrobble att all, check the following:
+
+  * That you've entered your account credentials successfully (and not changed them later)
+  * That the music app you're using shows upp in the Enabled Apps screen, and that it is enabled
+  * That you've enabled scrobbling in the Options screen.
+  * If have a Motorola Cliq/Dext, see this [issue](http://code.google.com/p/a-simple-lastfm-scrobbler/issues/detail?id=25)
+
+If it doesn't scrobble, but the track shows up in the local cache:
+
+  * Check your settings for when to submit in the Options screen
+  * You might also need to check the network options, and perhaps even the roaming preferences.
+  * Check your network status
+
+If none of this helps, email me.
+
+## Why won't my track scrobble if put on repeat? (Android Music/Hero Music) ##
+
+This is an unfortunate bug/reality. As Android Music and Hero Music currently work, if you put a single track on repeat, it won't scrobble as many times as is correct. This is because AM / HTCH doesn't submit enough information to external apps.
+
+If you have more than one track in your repeated playlist, scrobbling will be fine.
+
+As soon as I find a way to fix this, I will.
+
+## Why does a song get scrobbled twice? ##
+
+First, check if you have any other scrobblers beside SLS installed. These might include the official Last.fm app, and Scrobble Droid. The Last.fm app, Scrobble Droid and SLS all scrobble from the default Android Music app, so you have to disable scrobbling (for that app) in two of these.
+
+Scrobble Droid almost always conflict with SLS, see [below](http://code.google.com/p/a-simple-lastfm-scrobbler/wiki/FAQ?ts=1264719474&updated=FAQ#What_is_Scrobble_Droid?).
+
+If this doesn't end your double-scrobbling, email me and I'll try to fix it.
+
+## Why doesn't the scrobble point work? ##
+
+**This should be fixed in version 1.2.6.**
+
+Unfortunately, SLS can not know the duration of music played in Android Music / Hero Music. Therefore, the scrobble point doesn't work for those two apps, but instead the music is scrobbled after 30 seconds played.
+
+## What is Libre.fm? ##
+
+A new website, similar in ambition to Last.fm.
+
+Visit [Libre.fm](http://libre.fm).
+
+## What does 'Also on playlist finish' in the options screen mean? ##
+
+It means that if checked SLS will submit your scrobles when you've listened to the last track in a playlist.
+
+Currently this only works for Android Music/HTC Hero.
+
+## What do you do with my password? ##
+
+All passwords are stored in the encrypted form of an [MD5 hash](http://en.wikipedia.org/wiki/MD5). This means that it is impossible (or rather very, very time consuming) to extract the original password from SLS. This is actually how most/many websites and apps store passwords.
+
+To see where in SLS (the MD5 hash of) the password is actually used, take a look at these three classes: [Here](http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/EditUserCredentials.java) you enter the password, [here](http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/util/AppSettings.java) is how SLS accesses the password, and [here](http://code.google.com/p/a-simple-lastfm-scrobbler/source/browse/trunk/a_simple_lastfm_scrobbler/src/com/adam/aslfms/service/Handshaker.java) is where it is sent to Last.fm.
+
+You can at any time log out of your accounts by going to `User credentials -> Clear credentials` (or `User credentials -> Last.fm -> Clear credentials` for clearing just your Last.fm account). This will remove the MD5 hash and your username from your phone. (It also removes the unsubmitted cached scrobbles and any submission statistics, so be careful).
+
+## What is Scrobble Droid? ##
+
+Scrobble Droid is an app for Android similar to Simple Last.fm Scrobbler.
+
+**It is strongly recommended not to have both Scrobble Droid and Simple Last.fm Scrobbler installed at the same time.**
+
+## What does "Scrobble Droid Apps" mean? ##
+
+"Scrobble Droid Apps" mean all apps who have implemented support for the [Scrobble Droid API](http://code.google.com/p/scrobbledroid/wiki/DeveloperAPI), i.e. that can scrobble through Scrobble Droid. So by enabling this in the Supported Apps section, you can scrobble songs played in for instance [Meridian Player](http://sites.google.com/site/eternalsandbox/Home/meridian-video-player) and [RockOn](http://abrantix.org/rockon.php).
